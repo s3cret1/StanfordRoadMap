@@ -1,0 +1,211 @@
+<!-- templates.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Templates & Checklists | VibeRoad</title>
+  <style>
+    :root {
+      --bg: #f6f8fa;
+      --card: #fff;
+      --muted: #6b7280;
+      --text: #07101a;
+      --accent: #2aa7a0;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(12,15,20,0.06);
+      --maxw: 980px;
+    }
+
+    * { box-sizing: border-box }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.9);
+      border-bottom: 1px solid rgba(12,15,20,0.04);
+      backdrop-filter: blur(4px);
+    }
+
+    .nav {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 12px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 18px auto;
+      padding: 0 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    h1 { margin: 0 0 8px 0 }
+
+    .small { font-size: 14px; color: var(--muted) }
+
+    .box {
+      border: 1px dashed rgba(12,15,20,0.06);
+      padding: 12px;
+      border-radius: 10px;
+      background: linear-gradient(180deg,#fff,#fbfdff);
+      margin-bottom: 12px;
+    }
+
+    .fill-blank {
+      background: linear-gradient(90deg,#fff4eb,#f6fffe);
+      padding: 6px 9px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    footer {
+      max-width: var(--maxw);
+      margin: 28px auto;
+      padding: 0 18px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav" role="navigation" aria-label="Main navigation">
+      <div style="font-weight:800;color:var(--accent)">VibeRoad</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="journey.html">My Journey</a>
+        <a href="resources.html">Resources</a>
+        <a href="mindset.html">Mindset</a>
+        <a href="templates.html" aria-current="page">Templates</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Introduction -->
+    <section class="card">
+      <h1>Templates & Fillables</h1>
+      <p class="small">
+        Copy these into a notes app or print them. Keep one living doc per category.
+      </p>
+    </section>
+
+    <!-- 1-Page Application Checklist -->
+    <section class="card" style="margin-top:12px">
+      <h2 style="margin:0 0 8px 0">1-Page Application Checklist</h2>
+      <div class="box">
+        <pre>
+CPS application: ☐ Draft ☐ Submit ☐ Teacher reference requested
+Matriculate: ☐ Applied ☐ Advisor matched ☐ First meeting
+SAT/ACT: ☐ Diagnostic ☐ Practice plan ☐ Test 1 date ☐ Test 2 date
+Fly-ins: ☐ Applied to [list] ☐ Accepted to [list]
+Essays: ☐ Personal statement draft ☐ Reader 1 feedback ☐ Finalize
+Recommenders: ☐ Counselor asked ☐ Teacher 1 asked ☐ Teacher 2 asked
+FAFSA/CSS: ☐ FAFSA submitted ☐ CSS Profile submitted (if required)
+        </pre>
+      </div>
+    </section>
+
+    <!-- Essay Revision Log & Fly-in Tracker -->
+    <section class="card" style="margin-top:12px">
+      <h2 style="margin:0 0 8px 0">Essay Revision Log (table)</h2>
+      <div class="box">
+        <pre>
+Prompt | Draft date | Readers | Major suggestions | Finalized (date)
+
+Common App personal statement | [date] | [names] | [summary] | [date]
+Supplement - "Why X" | [date] | [name] | [summary] | [date]
+        </pre>
+      </div>
+
+      <h3 style="margin-top:12px">Fly-in Tracker</h3>
+      <div class="box">
+        <pre>
+School: [name]
+Application deadline: [date]
+Decision: [Accepted / Rejected / Waitlisted]
+Interview: [Y/N date]
+Travel date: [date]
+Notes: [network contacts / impressions]
+        </pre>
+      </div>
+    </section>
+
+    <!-- Match Ranking Worksheet -->
+    <section class="card" style="margin-top:12px">
+      <h2 style="margin:0 0 8px 0">Match Ranking Worksheet (private)</h2>
+      <div class="small" style="margin-bottom:8px">
+        For each school: write 3 reasons you'd be excited + 1 reservation. If the reservation is a dealbreaker, don't rank it.
+      </div>
+      <div class="box">
+        <pre>
+School name: __________
+Why I'd attend: 1) ___ 2) ___ 3) ___
+Reservation (one line): ______________
+
+School name: __________
+...
+        </pre>
+      </div>
+    </section>
+
+    <!-- Personal Fill-in Block -->
+    <section class="card" style="margin-top:12px">
+      <h2 style="margin:0 0 8px 0">Personal Fill-in Block</h2>
+      <div class="box">
+        <pre>
+Name: [Your name]
+My one-line story: [Your short summary]
+Top 3 lessons: 1) ___ 2) ___ 3) ___
+One encouragement to give juniors: [Your line]
+        </pre>
+      </div>
+      <div class="small">
+        Tip: Paste these templates into Google Docs / Notion and keep them updated weekly.
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div style="max-width:var(--maxw);margin:28px auto;padding:0 18px;color:var(--muted);display:flex;justify-content:space-between">
+      <div class="small">
+        Keep one living checklist and update it—small edits compound into big results.
+      </div>
+      <div class="small">[Fill in the blank] • <strong>[Your name]</strong></div>
+    </div>
+  </footer>
+</body>
+</html>
