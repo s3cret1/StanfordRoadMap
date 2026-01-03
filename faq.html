@@ -1,0 +1,160 @@
+<!-- faq.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — Quick Answers | VibeRoad</title>
+  <style>
+    :root {
+      --bg: #f6f8fa;
+      --card: #fff;
+      --muted: #6b7280;
+      --text: #07101a;
+      --accent: #2aa7a0;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(12,15,20,0.06);
+      --maxw: 980px;
+    }
+
+    * { box-sizing: border-box }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.9);
+      border-bottom: 1px solid rgba(12,15,20,0.04);
+      backdrop-filter: blur(4px);
+    }
+
+    .nav {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 12px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 18px auto;
+      padding: 0 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    h1 { margin: 0 0 8px 0 }
+
+    .q { font-weight: 700 }
+    .a { color: var(--muted); margin-top: 6px }
+
+    footer {
+      max-width: var(--maxw);
+      margin: 28px auto;
+      padding: 0 18px;
+      color: var(--muted);
+    }
+
+    hr {
+      margin: 12px 0;
+      border: none;
+      border-top: 1px solid rgba(12,15,20,0.04);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav" role="navigation" aria-label="Main navigation">
+      <div style="font-weight:800;color:var(--accent)">VibeRoad</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="journey.html">My Journey</a>
+        <a href="resources.html">Resources</a>
+        <a href="mindset.html">Mindset</a>
+        <a href="templates.html">Templates</a>
+        <a href="faq.html" aria-current="page">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Introduction -->
+    <section class="card">
+      <h1>FAQ — Short, Honest Answers</h1>
+      <p class="small" style="margin-top:8px">
+        Quick answers to questions most juniors ask first.
+      </p>
+    </section>
+
+    <!-- FAQ items -->
+    <section class="card" style="margin-top:12px">
+      <div class="q">Q: Do fly-ins actually help?</div>
+      <div class="a">
+        A: Yes. They help you learn fit, often include interviews, and admissions offices track attendance. Apply to those you’re genuinely interested in.
+      </div>
+      <hr>
+
+      <div class="q">Q: Is Matriculate worth it?</div>
+      <div class="a">
+        A: Many students find Matriculate helpful—it's free and pairs you with undergrads who provide writing feedback and practical deadlines. Experiences vary by advisor, but it's worth applying early.
+      </div>
+      <hr>
+
+      <div class="q">Q: How many schools should I rank on QuestBridge?</div>
+      <div class="a">
+        A: Rank only schools you'd happily attend. More schools can increase your match chances, but the Match is binding—do not rank a school you would refuse.
+      </div>
+      <hr>
+
+      <div class="q">Q: When does the Match Rankings Form open?</div>
+      <div class="a">
+        A: It commonly opens around October 1—verify yearly dates on the official QuestBridge Dates & Deadlines page before submitting.
+      </div>
+      <hr>
+
+      <div class="q">Q: What if I don’t match?</div>
+      <div class="a">
+        A: Not matching is not failure. Apply RD/EA and continue using your essays, test improvements, and advising. Many students still gain elite admits and scholarships.
+      </div>
+      <hr>
+
+      <div class="q">Q: What should I do first?</div>
+      <div class="a">
+        A: If you’re a junior: apply to CPS (if eligible), take a diagnostic SAT/ACT, and apply for a Matriculate advisor. Start a single living checklist and update it weekly.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div style="max-width:var(--maxw);margin:28px auto;padding:0 18px;color:var(--muted);display:flex;justify-content:space-between">
+      <div class="small">
+        Short answers—if you need deeper help, use Templates and Resources to build your plan.
+      </div>
+      <div class="small">[Fill in the blank] • <strong>[Your name]</strong></div>
+    </div>
+  </footer>
+</body>
+</html>
