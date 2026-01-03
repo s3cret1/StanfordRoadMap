@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>From Junior Year to Match Day — Roadmap for FGLI Students</title>
+    <meta name="description" content="A calm, step-by-step QuestBridge → Match → Stanford roadmap for first-generation & low-income students." />
+
+    <style>
+        :root {
+            --bg: #f6f8fa;
+            --card: #ffffff;
+            --muted: #6b7280;
+            --text: #07101a;
+            --accent: #2aa7a0;
+            --accent-2: #d77a5a;
+            --shadow: 0 10px 30px rgba(12, 15, 20, 0.06);
+            --radius: 14px;
+            --maxw: 980px;
+            --gap: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.5;
+            padding-bottom: 48px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background: rgba(255, 255, 255, 0.85);
+            border-bottom: 1px solid rgba(12, 15, 20, 0.04);
+            backdrop-filter: blur(6px);
+        }
+
+        .nav {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: -0.4px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background: rgba(10, 12, 15, 0.03);
+        }
+
+        .container {
+            max-width: var(--maxw);
+            margin: 28px auto;
+            padding: 0 18px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            align-items: start;
+        }
+
+        @media(min-width: 820px) {
+            .hero {
+                grid-template-columns: 1fr 360px;
+            }
+        }
+
+        .kicker {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            color: white;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        p.lead {
+            margin: 6px 0 0 0;
+            color: var(--muted);
+            max-width: 58ch;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .cta {
+            display: inline-block;
+            margin-top: 12px;
+            background: var(--accent);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .cta.alt {
+            background: var(--accent-2);
+            margin-left: 8px;
+        }
+
+        .small {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .aside-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .fill-blank {
+            background: linear-gradient(90deg, #fff4eb, #f6fffe);
+            padding: 6px 9px;
+            border-radius: 8px;
+            font-weight: 700;
+            color: var(--text);
+            display: inline-block;
+        }
+
+        .timeline {
+            display: grid;
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .timeline .item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            background: var(--accent);
+            margin-top: 6px;
+        }
+
+        .callout {
+            border-left: 4px solid var(--accent);
+            padding: 12px 14px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #fff, #fffaf8);
+        }
+
+        footer {
+            max-width: var(--maxw);
+            margin: 40px auto 18px;
+            padding: 0 18px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 8px 12px;
+            background: transparent;
+            border-radius: 10px;
+            font-weight: 700;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a.button:hover {
+            transform: translateY(-2px);
+            transition: all .14s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav" role="navigation" aria-label="Main navigation">
+            <div class="logo">VibeRoad</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="journey.html">My Journey</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="mindset.html">Mindset</a></li>
+                    <li><a href="templates.html">Templates</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="main">
+        <section class="hero card" aria-labelledby="hero-title">
+            <div>
+                <span class="kicker">Calm • Practical • Repeatable</span>
+                <h1 id="hero-title">From Junior Year to Match Day — A roadmap for FGLI students</h1>
+                <p class="lead">
+                    Real steps from a QuestBridge Match to Stanford. Month-by-month guidance, curated resources, and mindset tools that help you act—not panic.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
